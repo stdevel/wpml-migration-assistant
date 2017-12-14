@@ -1,10 +1,10 @@
 # WPML Category and Tag Migration Assistant
-This utility assists with completing **missing post categories** and **tags** (*taxonomies*) within [https://www.wordpress.org/](WordPress) after migrating from [https://wordpress.org/plugins/qtranslate/](qTranslate) [https://wordpress.org/plugins/qtranslate-x/](qTranslate-X) to [https://wpml.org/](WPML) (*WordPress Multilingual Plugin*).
+This utility assists with completing **missing post categories** and **tags** (*taxonomies*) within [WordPress](https://www.wordpress.org/) after migrating from [qTranslate](https://wordpress.org/plugins/qtranslate/) or [qTranslate-X](https://wordpress.org/plugins/qtranslate-x/) to [WPML](https://wpml.org/) (*WordPress Multilingual Plugin*).
 
 ## Prerequisites
-Make sure to install the [https://wordpress.org/plugins/qtranslate-to-wpml-export/](qTranslate X Cleanup and WPML Import) plugin within WordPress and consult the following instruction in order to import qTranslate/qTranslate-X translations: https://wpml.org/documentation/related-projects/qtranslate-importer/
+Make sure to install the [qTranslate X Cleanup and WPML Import](https://wordpress.org/plugins/qtranslate-to-wpml-export/) plugin within WordPress and consult the following instruction in order to import qTranslate/qTranslate-X translations: https://wpml.org/documentation/related-projects/qtranslate-importer/
 
-I also assume that you already translated all taxonomies (*categories and tags*) names and followed this naming schema ``slugName-languageShortcode`` (*2 letter [https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes](ISO 639-1 code)*).
+I also assume that you already translated all taxonomies (*categories and tags*) names and followed this naming schema ``slugName-languageShortcode`` (*2 letter [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), e.g. ``en``  or ``de``*).
 
 Example:
 German slug: ``linux``
@@ -26,7 +26,7 @@ Simply copy the ``wpml_assistant`` folder to your web server, e.g. via SFTP or S
 * WordPress database name
 * Username
 * Password
-* Source language (*2 letter [https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes](ISO 639-1 code), e.g. ``en`` or ``de``*)
+* Source language (*2 letter ISO 639-1 code, e.g. ``en`` or ``de``*)
 * Target language (*2 letter code*)
 
 **Disclaimer:** I also assume that you have created a **valid backup** of your WordPress database. This is an ugly script (*you really don't want to see the source code*) I wrote in a hurry just to get shit done - so things might go wrong on your installation. So - don't blame me for living on the edge: you have been warned. 🤷
