@@ -7,8 +7,8 @@ Make sure to install the [qTranslate X Cleanup and WPML Import](https://wordpres
 I also assume that you already translated all taxonomies (*categories and tags*) names and followed this naming schema ``slugName-languageShortcode`` (*2 letter [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), e.g. ``en``  or ``de``*).
 
 Example:
-German slug: ``linux``
-English slug: ``linux-**en**``
+* German slug: ``linux``
+* English slug: ``linux``**-en**
 
 ![Translation example](https://raw.githubusercontent.com/stdevel/wpml-migration-assistant/master/wpml_assistant/translation.jpg "Translation example")
 
