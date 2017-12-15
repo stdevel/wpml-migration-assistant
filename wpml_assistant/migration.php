@@ -116,7 +116,7 @@ class cleanup {
 
   function set_taxonomy($post_id, $taxonomy_id) {
     //set taxonomies (category, post_tag) per post
-    $count = $this->get_data("SELECT `count` FROM `wp_term_taxonomy` WHERE `term_id` = " . $this->conn->real_escape_string($taxonomy_id) . ";");
+    $count = $this->get_data("SELECT `count` FROM `wp_term_taxonomy` WHERE `term_taxonomy_id` = " . $this->conn->real_escape_string($taxonomy_id) . ";");
     //update database if counter read
     if($count) {
       $queries[0] = "INSERT INTO `wp_term_relationships` (object_id, term_taxonomy_id, term_order) VALUES (" . $this->conn->real_escape_string($post_id) . ", (SELECT `term_taxonomy_id` FROM wp_term_taxonomy WHERE `term_id`= " . $this->conn->real_escape_string($taxonomy_id) . "), 0);";
